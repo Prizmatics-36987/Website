@@ -101,9 +101,12 @@ header {
 }
 
 .header-image img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-}
+  width: 50%;
+  }
 
 aside {
   grid-area: aside;
