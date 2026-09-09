@@ -2,7 +2,7 @@
   font-display: swap;
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url('assets/lato-v25-latin-regular.woff2') format('woff2');
 }
 
@@ -151,8 +151,6 @@ aside {
   margin-top: 10px;
 }
 
-/* Sidebar Blockquote: */
-
 .sidebar-section blockquote {
   background: rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -244,8 +242,6 @@ header nav ul li:first-child > a {
 header nav ul li:last-child > a {
   padding-right: 0;
 }
-
-/* Subnavigation (Drop-Down): */
 
 header nav ul ul {
   background: var(--background-color);
@@ -341,8 +337,6 @@ main hr {
   margin: 1.5em 0;
 }
 
-/* HEADINGS: */
-
 main h1,
 main h2,
 main h3,
@@ -432,12 +426,6 @@ main h6 {
   overflow: hidden;
 }
 
-/* -------------------------------------------------------- */
-/* ACCESSIBILITY */
-/* -------------------------------------------------------- */
-
-/* please do not remove this. */
-
 #skip-to-content-link {
   position: fixed;
   top: 0;
@@ -458,11 +446,6 @@ main h6 {
   transform: translateY(0);
 }
 
-/* -------------------------------------------------------- */
-/* MOBILE RESPONSIVE */
-/* -------------------------------------------------------- */
-
-/* CSS Code for devices < 800px */
 @media (max-width: 800px) {
   body {
     font-size: 14px;
@@ -471,7 +454,6 @@ main h6 {
   .layout {
     width: 100%;
     grid-template: "header" auto  "main" auto "footer" auto / 1fr;
-    /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
   .left-sidebar {
