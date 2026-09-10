@@ -123,6 +123,10 @@ aside {
     color: var(--sidebar-text-color);
 }
 
+video {
+    width: 150px;
+}
+
 .left-sidebar {
     grid-area: leftSidebar;
 }
