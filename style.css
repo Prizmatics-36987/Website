@@ -129,6 +129,8 @@ aside {
 
 .right-sidebar {
     grid-area: rightSidebar;
+    position: relative;
+    bottom: 100px;
 }
 
 .sidebar-title {
@@ -438,6 +440,10 @@ main h6 {
     transform: translateY(-3rem);
     transition: transform 0.1s ease-in;
     z-index: 99999999999;
+}
+
+.button {
+    width: 88px;
 }
 
 #skip-to-content-link:focus,
