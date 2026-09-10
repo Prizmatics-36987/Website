@@ -12,7 +12,7 @@
     --sidebar-background-color: transparent;
 
     --text-color: #ffffffff;
-    --sidebar-text-color: #595959;
+    --sidebar-text-color: #ffffffff;
     --link-color: #493cffdb;
     --link-color-hover: #3d7dffdb;
 
@@ -75,7 +75,7 @@ a:focus {
     width: 100%;
     display: grid;
     grid-gap: var(--margin);
-    grid-template: "header" auto "main" auto "footer" auto / auto;
+    grid-template: "header header" auto "main rightSidebar" auto "footer footer" auto / auto var(--sidebar-width);
 }
 
 main {
