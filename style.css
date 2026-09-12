@@ -123,7 +123,11 @@ aside {
     color: var(--sidebar-text-color);
 }
 
-video {
+.milestone {
+    width: 150px;
+}
+
+.recent-vid {
     width: 300px;
 }
 
