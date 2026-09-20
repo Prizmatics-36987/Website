@@ -563,7 +563,7 @@
         range: {
             label: "MEDIUM // SOCIAL MEDIA",
             value: "~4 DAYS",
-            href:  "www.instagram.com/prizmatics_ftc",
+            href:  "https://www.instagram.com/prizmatics_ftc",
         },
         charging: {
             label: "MEDIUM // MEET UP",
