@@ -281,21 +281,21 @@
     var bpStates = [
         {
             chip: "A-01 // AERODYNAMICS",
-            data: "CD 0.27 // DF 980 KG",
+            data: "Dr. Woodie Flowers",
             x: 22,
-            y: 26,
+            y: 60,
         },
         {
             chip: "A-02 // NEURAL CORE",
-            data: "512 TOPS // 2,000 HZ",
+            data: "DECODE Robot",
             x: 48,
             y: 50,
         },
         {
             chip: "A-03 // BATTERY ARRAY",
-            data: "118 KWH // CG 410 MM",
-            x: 28,
-            y: 72,
+            data: "Teammates enjoying themselves ",
+            x: 10,
+            y: 80,
         },
     ];
 
