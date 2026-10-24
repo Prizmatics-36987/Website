@@ -3,235 +3,358 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prizmatics</title>
+    <title>Prizmatics FTC - #36987</title>
     <meta name="description" content="Prizmatics is an independent FTC team." />
-    <link href="images/logo.png" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="img/icon.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
 </head>
 <body>
-<div class="hud" aria-hidden="false">
-    <div class="hud-frame" aria-hidden="true">
-        <span class="ck"></span>
+<section id="infinite" class="text-white tm-font-big tm-parallax">
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
+            <div class="tm-next"><a href="#infinite" class="navbar-brand">Prizmatics</a></div>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link tm-nav-link" href="#infinite">Home</a></li>
+                    <li class="nav-item"><a class="nav-link tm-nav-link" href="#whoweare">Who We Are</a></li>
+                    <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title">Prizmatics</h2>
+            <p class="tm-hero-subtitle">FTC Team #36987<br /></p>
+        </div>
     </div>
-    <div class="hud-item hud-index">SECT <b id="hud-block">01</b> / 04</div>
-    <div class="hud-item hud-arrows">
-        <button class="arrow-btn up" id="arrow-up" disabled>
-            <span class="chev" aria-hidden="true"></span>
-        </button>
-        <button class="arrow-btn down" id="arrow-down">
-            <span class="chev" aria-hidden="true"></span>
-        </button>
+    <div class="tm-next tm-intro-next">
+        <a href="#whoweare" class="text-center tm-down-arrow-link">
+            <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+        </a>
     </div>
-    <div class="hud-item hud-progress">
-        <span class="bar" aria-hidden="true"><i id="hud-bar"></i></span>
-        <span id="hud-pct">000%</span>
+</section>
+<section id="whoweare" class="tm-section-pad-top">
+    <div class="container">
+        <div class="row tm-content-box">
+            <div class="col-lg-12 col-xl-12">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4 tm-section-title">Who We Are</h2>
+                    <p class="mb-4 tm-intro-text">
+                        We are an independent <abbr title="FIRST Tech Challenge">FTC</abbr> robotics club
+                        located in jerusalem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row tm-content-box">
+            <div class="col-lg-1"><i class="fas fa-3x fa-users text-center tm-icon"></i></div>
+            <div class="col-lg-5">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4">Gracious Professionalism</h2>
+                    <p class="mb-4 tm-intro-text">
+                        A way of doing things that encourages high quality work, emphasizes the value of others,
+                        and respects individuals and the community.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-1"><i class="far fa-3x fa-handshake text-center tm-icon"></i></div>
+            <div class="col-lg-5">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4">Coopertition</h2>
+                    <p class="mb-4 tm-intro-text">
+                        We help and cooperate with other teams, even as we complete.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row tm-content-box">
+            <div class="col-lg-1"><i class="fas fa-3x fa-gamepad text-center tm-icon"></i></div>
+            <div class="col-lg-5">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4">Volunteering</h2>
+                    <p class="mb-4 tm-intro-text">
+                        We get a <b>lot</b> of help from our volunteers - physical parts, coding help, and
+                        OnShape design tips.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-1"><i class="fas fa-3x fa-chalkboard text-center tm-icon"></i></div>
+            <div class="col-lg-5">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4">STEM Courses</h2>
+                    <p class="mb-4 tm-intro-text">
+                        We help our community out by creating and teaching STEM courses to children and young
+                        teens.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<span class="seam" aria-hidden="true"></span>
-<main class="stage" id="stage">
-    <section class="panel t-left" data-i="0">
-        <div class="panel-inner">
-            <p class="eyebrow reveal">INDEPENDENT ROBOTICS TEAM // #36987</p>
-            <h1 class="hero-title reveal">Prizmatics</h1>
-            <p class="lede reveal">
-                We are an independent <abbr title="FIRST Tech Challenge">FTC</abbr> robotics club located in
-                jerusalem.
-            </p>
-            <div class="clock-shell reveal" role="timer">
-                <span class="clock-label">SYS TIME</span>
-                <span id="live-clock">00:00:00<span class="ms">.000</span></span>
+</section>
+<section id="contact" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-container-contact">
+        <div class="row">
+            <div class="text-center col-12">
+                <h2 class="tm-section-title mb-4">Contact Us</h2>
+                <p class="mb-5">
+                    Whether a sponsor, or just someone interested in our group, we would love to hear from you!
+                    these are the ways to contact us:
+                </p>
+                <br />
             </div>
-            <div class="spec-row reveal">
-                <div class="spec-cell">
-                    <span class="k">TEAM</span><span class="v">19<small>Members</small></span>
+            <div class="col-sm-12 col-md-6">
+                <form action="mailto:prismatics@prizma.org.il" method="post" enctype="text/plain">
+                    <label for="name"></label
+                    ><input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Your Name"
+                        class="tm-input"
+                        required
+                />
+                    <label for="message"></label
+                    ><textarea
+                        id="message"
+                        name="message"
+                        rows="8"
+                        placeholder="Message"
+                        class="tm-input"
+                        required
+                ></textarea>
+                    <button type="submit" class="btn tm-btn-submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="contact-item">
+                    <a rel="nofollow" href="https://www.instgram.com/prismatics_ftc" class="item-link">
+                        <i class="far fa-2x fa-comment mr-4"></i> <span class="mb-0">Instgram</span>
+                    </a>
                 </div>
-                <div class="spec-cell">
-                    <span class="k">SEASON</span><span class="v"> BIOBUZZ</span>
+                <div class="contact-item">
+                    <a rel="nofollow" href="mailto:prismatics@prizma.org.il" class="item-link">
+                        <i class="far fa-2x fa-envelope mr-4"></i>
+                        <span class="mb-0">prismatics@prizma.org.il</span>
+                    </a>
                 </div>
-                <div class="spec-cell">
-                    <span class="k">ID</span><span class="v"> #36987</span>
+                <div class="contact-item">
+                    <a rel="nofollow" href="https://maps.app.goo.gl/Fa8tNoUrFJ2h1LtKA" class="item-link">
+                        <i class="fas fa-2x fa-map-marker-alt mr-4"></i> <span class="mb-0">Come Visit!</span>
+                    </a>
                 </div>
+                <div class="contact-item">&nbsp;</div>
             </div>
         </div>
-    </section>
-    <section class="panel t-right panel-media" data-i="0">
-        <figure class="media-frame">
-            <img src="images/1.jpg" loading="eager" alt="" />
-            <span class="scanline" aria-hidden="true"></span>
-        </figure>
-    </section>
+    </div>
+    <footer class="text-center small tm-footer">
+        <p class="mb-0">
+            Prizmatics - CC0 License. Designed by <a href="https://github.com/pauytrh2">pauytrh</a>.
+        </p>
+    </footer>
+</section>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    function getOffSet() {
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
 
-    <section class="panel t-left" data-i="1">
-        <div class="panel-inner">
-            <p class="eyebrow reveal">TEAMWORK // DYNAMIC</p>
-            <h2 class="section-title reveal">WORK ETHIC <span class="slash">//</span> PRINCIPLES</h2>
-            <p class="lede reveal">
-                We work voluntarly in most days of the week, but our offical days of work are tuesday and wednesday.
-            </p>
-            <div class="accordion reveal" id="accordion">
-                <div class="acc-item open">
-                    <button class="acc-head" aria-expanded="true">
-                        <span class="acc-index">Principle 01</span>
-                        <span class="acc-title">Gracious Professionalism</span>
-                        <span class="acc-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="acc-body">
-                        <p>A way of doing things that encourages high quality work, emphasizes the value of others, and respects individuals and the community.</p>
-                    </div>
-                </div>
-                <div class="acc-item">
-                    <button class="acc-head" aria-expanded="false">
-                        <span class="acc-index">Principle 02</span>
-                        <span class="acc-title">Volunteering</span>
-                        <span class="acc-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="acc-body">
-                        <p>We get a lot of help from our volunteers - physical parts, coding help, and OnShape design tips.</p>
-                    </div>
-                </div>
-                <div class="acc-item">
-                    <button class="acc-head" aria-expanded="false">
-                        <span class="acc-index">Principle 03</span>
-                        <span class="acc-title">Teamwork and Coopertition</span>
-                        <span class="acc-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="acc-body">
-                        <p>We help and cooperate with other teams, even as we complete.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="panel t-right panel-media" data-i="1">
-        <div class="bp-stage" id="bp-stage">
-            <img class="bp-img active" src="images/2.jpg" alt="" loading="lazy" />
-            <img class="bp-img" src="images/3.jpg" alt="" loading="lazy" />
-            <img class="bp-img" src="images/4.jpg" alt="" loading="lazy" />
-            <span class="bp-marker" id="bp-marker" aria-hidden="true">
-                        <span class="bp-ring"></span>
-                        <span class="bp-hairline"></span>
-                        <span class="bp-data" id="bp-data">CD 0.27 // DF 980 KG</span>
-                    </span>
-        </div>
-    </section>
+        if (windowHeight > 500) {
+            _offset = 400;
+        }
+        if (windowHeight > 680) {
+            _offset = 300;
+        }
+        if (windowHeight > 830) {
+            _offset = 210;
+        }
 
-    <section class="panel t-left panel-media" data-i="2">
-        <figure class="media-frame">
-            <img src="images/5.jpg" alt="" loading="lazy" />
-        </figure>
-    </section>
-    <section class="panel t-right" data-i="2">
-        <div class="panel-inner carousel-panel">
-            <div>
-                <p class="eyebrow reveal" style="justify-content: center">CURRENT PROJECT // DEVELOPMENT</p>
-                <h2 class="section-title reveal" style="text-align: center">
-                    ROBOT <span class="slash">//</span> STACK
-                </h2>
-            </div>
-            <div class="c3d-stage reveal" id="c3d-stage">
-                <div class="c3d" id="c3d">
-                    <article class="c3d-card">
-                        <div class="card-face face-front">
-                            <span class="c-id">STAGE 01 // CAD</span>
-                            <h3 class="c-name">Initial Sketch</h3>
-                            <p class="c-desc">We start by sketching early prototypes in Onshape.</p>
-                            <p class="c-fig">PICTURE</p>
-                        </div>
-                        <div class="card-face face-back" aria-hidden="true">
-                            <span class="back-id">STAGE 01</span>
-                            <span class="back-bars"></span>
-                            <span class="back-label">STANDBY</span>
-                        </div>
-                    </article>
-                    <article class="c3d-card">
-                        <div class="card-face face-front">
-                            <span class="c-id">STAGE 02 // REAL WORLD</span>
-                            <h3 class="c-name">Early Build</h3>
-                            <p class="c-desc">
-                                We build out our sketched prototype and start desinging the robot as a whole.
-                            </p>
-                            <p class="c-fig">PICTURE</p>
-                        </div>
-                        <div class="card-face face-back" aria-hidden="true">
-                            <span class="back-id">STAGE 02</span>
-                            <span class="back-bars"></span>
-                            <span class="back-label">STANDBY</span>
-                        </div>
-                    </article>
-                    <article class="c3d-card">
-                        <div class="card-face face-front">
-                            <span class="c-id">STAGE 03 // CODE</span>
-                            <h3 class="c-name">Auto & TeleOp</h3>
-                            <p class="c-desc">We program the Autonomous and TeleOp code. All open source.</p>
-                            <p class="c-fig">PICTURE</p>
-                        </div>
-                        <div class="card-face face-back" aria-hidden="true">
-                            <span class="back-id">STAGE 03</span>
-                            <span class="back-bars"></span>
-                            <span class="back-label">STANDBY</span>
-                        </div>
-                    </article>
-                    <article class="c3d-card">
-                        <div class="card-face face-front">
-                            <span class="c-id">STAGE 04 // COMPETITION</span>
-                            <h3 class="c-name">Test & Repeat</h3>
-                            <p class="c-desc">
-                                We see what went wrong and build on our foundation to create a robust solution.
-                            </p>
-                            <p class="c-fig">PICTURE</p>
-                        </div>
-                        <div class="card-face face-back" aria-hidden="true">
-                            <span class="back-id">STAGE 04</span>
-                            <span class="back-bars"></span>
-                            <span class="back-label">STANDBY</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="c3d-deck reveal">
-                <p class="c3d-status" id="c3d-status">STAGE 01 <b>//</b> INITIAL SKETCH</p>
-                <div class="c3d-controls">
-                    <button class="c3d-ctl" id="c3d-prev">
-                        <span class="chev-l" aria-hidden="true"></span>
-                    </button>
-                    <button class="mod-btn active" data-mod="0">01</button>
-                    <button class="mod-btn" data-mod="1">02</button>
-                    <button class="mod-btn" data-mod="2">03</button>
-                    <button class="mod-btn" data-mod="3">04</button>
-                    <button class="c3d-ctl" id="c3d-next">
-                        <span class="chev-r" aria-hidden="true"></span>
-                    </button>
-                    <button class="c3d-ctl playing" id="c3d-play" aria-pressed="true">
-                        <span class="ico-play" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+        return _offset;
+    }
 
-    <section class="panel t-left" data-i="3">
-        <div class="panel-inner">
-            <p class="eyebrow reveal">CONTACT // REACH US</p>
-            <h2 class="section-title reveal">WE ARE <span class="slash">//</span> AVAILABLE</h2>
-            <p class="lede reveal">Select a medium. Click on the response time on the right.</p>
-            <div class="tab-rail reveal" role="tablist">
-                <button class="tab-btn active" role="tab" aria-selected="true" data-tab="performance">
-                    EMAIL
-                </button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="range">SOCIAL MEDIA</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="charging">COME VISIT</button>
-            </div>
-        </div>
-    </section>
-    <section class="panel t-right panel-media" data-i="3">
-        <div class="kinetic-panel">
-            <p class="kinetic-label" id="kinetic-label">MEDIUM // EMAIL</p>
-            <a class="kinetic-value" id="kinetic-value" href="mailto:prismatics@prizma.org">
-                1 WEEK
-            </a>
-        </div>
-    </section>
-</main>
-<script src="js/animate.js"></script>
+    function setParallaxPosition($doc, multiplier, $object) {
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+            bg_css = "center " + (multiplier * from_top - offset) + "px";
+        $object.css({ "background-position": bg_css });
+    }
+
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+        multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+
+        if (forceSet) {
+            setParallaxPosition($doc, multiplier, $object);
+        } else {
+            $(window).scroll(function () {
+                setParallaxPosition($doc, multiplier, $object);
+            });
+        }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+        multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({ "background-attachment": "fixed" });
+
+        $(window).scroll(function () {
+            if ($(window).width() > 768) {
+                var firstTop = $object.offset().top,
+                    pos = $(window).scrollTop(),
+                    yPos = Math.round(multiplier * (firstTop - pos) - 186);
+
+                var bg_css = "center " + yPos + "px";
+
+                $object.css({ "background-position": bg_css });
+            } else {
+                $object.css({ "background-position": "center" });
+            }
+        });
+    };
+
+    $(function () {
+        background_image_parallax($(".tm-parallax"), 0.3, false);
+        background_image_parallax_2($("#contact"), 0.8);
+        background_image_parallax_2($("#testimonials"), 0.8);
+
+        window.addEventListener(
+            "resize",
+            function () {
+                background_image_parallax($(".tm-parallax"), 0.3, true);
+            },
+            true
+        );
+
+        $(window).scroll(function (e) {
+            if ($(document).scrollTop() > 120) {
+                $(".tm-navbar").addClass("scroll");
+            } else {
+                $(".tm-navbar").removeClass("scroll");
+            }
+        });
+
+        $("#tmNav a").on("click", function () {
+            $(".navbar-collapse").removeClass("show");
+        });
+
+        $("#tmNav").singlePageNav({
+            easing: "easeInOutExpo",
+            speed: 600,
+        });
+
+        $("a").on("click", function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $("html, body").animate(
+                    {
+                        scrollTop: $(hash).offset().top,
+                    },
+                    600,
+                    "easeInOutExpo",
+                    function () {
+                        window.location.hash = hash;
+                    }
+                );
+            }
+        });
+
+        $(".tm-gallery").magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: { enabled: true },
+        });
+
+        $(".tm-testimonials-carousel").slick({
+            dots: true,
+            prevArrow: false,
+            nextArrow: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+        $(".tm-gallery").slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
+    });
+</script>
 </body>
 </html>
